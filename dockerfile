@@ -7,4 +7,4 @@ COPY . .
 RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 
-CMD ["java", "-jar", "/target/kisansetu-backend-1.0.0.jar"]
+CMD ["sh", "-c", "java -jar target/*.jar"]
